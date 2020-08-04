@@ -35,11 +35,11 @@ All Routes to the API are -
 5.Example-
 {"email":"abcd@gmail.com","product_name":"laptop","token":"oocnxm0.540390055d2494227dasd"}
 
-●	To Place order on Ecommerce app- 
+●	To View all orders of a particular user on Ecommerce app
 1.	Request Method is GET
 2.	 Link is-
 http://3.16.109.253:8080/viewOrder/{email}/token/{token}
-3. Output is JsonArray which gives an Array of Json and each Json in the array gives all details that are : “id”,”email”,”product_name”,(if token is incorrect we get 403 forbidden)  
+3. Output is JsonArray which gives an Array of Json and each Json in the array gives all details that are : “id”,”email”,”product_name”,"time and date of order"(if token is incorrect we get 403 forbidden)  
 4.Example-
 http://3.16.109.253:8080/viewOrder/abc@gmail.com/token/oocnxm0.37122841907082316dasd
 
